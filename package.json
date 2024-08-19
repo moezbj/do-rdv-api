@@ -2,7 +2,10 @@
   "name": "graphql-auth",
   "license": "MIT",
   "scripts": {
-    "build": "netlify deploy --prod"
+    "build": "netlify deploy --prod",
+    "dev": "ts-node-dev --no-notify --respawn --transpile-only netlify/functions/server",
+    "start": "node dist/server",
+    "clean": "rm -rf dist"
   },
   "prettier": {
     "semi": false,
