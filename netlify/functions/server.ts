@@ -1,7 +1,7 @@
 
-import getServer from './config/apollo'
-import { port, databaseUri } from './config/vars'
-import prisma from './config/prisma'
+import getServer from '../../src/config/apollo'
+import { port, databaseUri } from '../../src/config/vars'
+import prisma from '../../src/config/prisma'
 import mongoose from 'mongoose';
 const connectDB = async () => {
   try {
