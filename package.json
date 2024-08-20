@@ -2,7 +2,7 @@
   "name": "graphql-auth",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build",
+    "build": "npm -s run clean && npm -s run generate && tsc",
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/server",
     "start": "node dist/server",
     "clean": "rm -rf dist"
