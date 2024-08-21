@@ -1,10 +1,9 @@
-/* 
-import getServer from '../../src/config/apollo'
-import { port, databaseUri } from '../../src/config/vars'
-import prisma from '../../src/config/prisma'
+
+import getServer from './config/apollo'
+import { port, databaseUri } from './config/vars'
+import prisma from './config/prisma'
 import mongoose from 'mongoose';
 
-import serverless from "serverless-http";
 const connectDB = async () => {
   try {
     if (databaseUri) {
@@ -23,7 +22,7 @@ getServer().then((httpServer) => {
     console.log(`🚀 Server ready at http://localhost:${port}/graphql`)
   })
 })
- */
+
 /* import getServer from '../src/config/apollo'
 import { databaseUri } from '../src/config/vars'
 import prisma from '../src/config/prisma'
@@ -55,7 +54,7 @@ export const handler = async (event: any, context: any) => {
   return graphqlHandler(event, context) // Handle the request with serverless-http
 }
  */
-import { ApolloServer } from '@apollo/server'
+/* import { ApolloServer } from '@apollo/server'
 import { expressMiddleware } from '@apollo/server/express4'
 import mongoose from 'mongoose'
 import serverless from 'serverless-http'
@@ -111,4 +110,4 @@ export const handler = async (event: any, context: any) => {
   const graphqlHandler = serverless(app) // Convert the Express app to a Lambda handler
 
   return graphqlHandler(event, context) // Handle the request with serverless-http
-}
+} */
